@@ -101,15 +101,7 @@ a {
 }
 
 .logo-studio {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: #2e2f42;
-    line-height: 1.17;
-    margin-right: 76px;
-    padding: 24px 0;
 }
 
 .navigation,
@@ -123,6 +115,10 @@ a {
     padding: 24px 0;
     display: block;
     line-height: 1.5;
+    font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
 }
 
 .nav-link.studio {
@@ -201,6 +197,7 @@ a {
     text-align: center;
     max-width: 496px;
     margin: 0 auto;
+    margin-bottom: 48px;
 
 }
 
@@ -315,7 +312,7 @@ a {
     gap: 24px;
 }
 
-.section-title-three {
+.section-title-names {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -525,16 +522,7 @@ a {
 }
 
 .logo-footer-studio {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: #f4f4fd;
-    display: inline-block;
-    margin-bottom: 16px;
-
 }
 
 .footer-item {
@@ -645,8 +633,7 @@ a {
 
 }
 .div-form {
-    width: 453px;
-    height: 80px;
+    margin-left: auto;
 }
 .input {
     width: 264px;
@@ -678,8 +665,6 @@ a {
     border: none;
     border-radius: 4px;
     flex-direction: row;
-    gap: 16px;
-    padding: 8px 24px;
 }
 .icon-subscribe {
     margin-left: 16px;
@@ -694,8 +679,8 @@ a {
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-    opacity: 1;
     z-index: 999;
+    display: none;
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-window {
@@ -779,9 +764,13 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     color: #8e8f99;
     display: block;
     margin-bottom: 4px;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
+
+.label-name:focus-within+.input-name {
+    fill: #4D5AE5;
+}
+
 .div-input-name {
     position: relative;
     display: flex;
@@ -905,6 +894,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .button.send:hover,
@@ -913,5 +903,5 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .privacy-icon {
-
+fill: #f4f4fd;
 }
